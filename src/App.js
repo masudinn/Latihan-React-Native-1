@@ -1,12 +1,29 @@
-import React, { Component } from 'react'
-import { Text, View } from 'react-native'
+import React from 'react'
+import { View, Text, TextInput } from 'react-native'
 
-export default class App extends Component {
-  render() {
-    return (
-      <View>
-        <Text> textInComponent </Text>
-      </View>
-    )
-  }
+const App = (firstName, secondName, thirdName) => {
+  return firstName + " " + secondName + " " + thirdName;
 }
+
+const Name = () => {
+  return (
+    <View>
+      <Text>
+        Hai namu{App(" samsul", "joe", "joko")}!
+      </Text>
+
+      <TextInput
+        style={{
+          marginTop: 20,
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 1
+        }}
+        defaultValue="Input me"
+      />
+    </View>
+  );
+}
+
+
+export default Name;
