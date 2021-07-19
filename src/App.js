@@ -5,6 +5,16 @@ const App = (firstName, secondName, thirdName) => {
   return firstName + " " + secondName + " " + thirdName;
 }
 
+const Hewan = (props) => {
+  return (
+    <View>
+      <Text > Ini hewan {props.namahewan}</Text>
+    </View>
+  )
+
+}
+
+
 const Name = () => {
   return (
     <View>
@@ -21,7 +31,13 @@ const Name = () => {
         }}
         defaultValue="Input me"
       />
+
+      <Hewan namahewan="gajah" />
+      <Hewan namahewan=" props " />
+      <Hewan namahewan="kuda" />
+
     </View>
+
   );
 }
 
