@@ -7,6 +7,6 @@ import App from './src/App';
 import { name as appName } from './app.json';
 import CoreComponen from './src/CoreComponen';
 import DesignTampilan from './src/DesignTampilan';
-import Name from './src/App';
+import StateProps from './src/StateProps';
 
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => StateProps);

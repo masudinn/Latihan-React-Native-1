@@ -33,7 +33,7 @@ const Name = () => {
       />
 
       <Hewan namahewan="gajah" />
-      <Hewan namahewan=" props " />
+      <Hewan namahewan=" props" />
       <Hewan namahewan="kuda" />
 
     </View>
