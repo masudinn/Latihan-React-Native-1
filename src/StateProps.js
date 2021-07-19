@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
+import Operan from './Operan'
 
 export default class DesignTampilan extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ export default class DesignTampilan extends Component {
 
     gantiState() {
         this.setState({
-            sekolah: 'Dicocrot'
+            kelas: 'Dicocrot'
         })
     }
 
@@ -31,6 +32,7 @@ export default class DesignTampilan extends Component {
                     <Text>Ini adalah {this.state.sekolah}</Text>
                     <Text>Kegiatannya {kelas}</Text>
 
+                    <Operan kelas={kelas} />
 
                     <TouchableOpacity style={styles.Tombol} onPress={() => this.gantiState()}>
 
